@@ -150,8 +150,15 @@ function guardarDatos() {
   
   localStorage.setItem('datosTienda', datosJSON);
 
+  Swal.fire({
+    icon: 'success',
+    title: 'Los datos se han guardado en localStorage',
+    text: 'Espero que este para aprobar!',
+    
+  })
+
   
-  alert('Los datos se han guardado en localStorage.');
+  //alert('Los datos se han guardado en localStorage.');
 }
 
 //test para ver funcionamiento - ejemplo clase
